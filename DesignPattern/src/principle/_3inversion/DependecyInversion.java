@@ -1,4 +1,4 @@
-package principle.inversion;
+package principle._3inversion;
 
 public class DependecyInversion {
 

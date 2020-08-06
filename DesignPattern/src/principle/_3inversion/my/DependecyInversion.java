@@ -1,4 +1,4 @@
-package principle.inversion.my;
+package principle._3inversion.my;
 
 /**
  * @author 孟享广

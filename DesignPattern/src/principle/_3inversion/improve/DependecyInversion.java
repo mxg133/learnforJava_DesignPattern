@@ -1,38 +1,38 @@
-package principle.inversion.improve;
+package principle._3inversion.improve;
 
 public class DependecyInversion {
 
 	public static void main(String[] args) {
-		//�ͻ�������ı�
+		//客户端无需改变
 		Person person = new Person();
 		person.receive(new Email());
-		
+
 		person.receive(new WeiXin());
 	}
 
 }
 
-//����ӿ�
+//定义接口
 interface IReceiver {
 	public String getInfo();
 }
 
 class Email implements IReceiver {
 	public String getInfo() {
-		return "�����ʼ���Ϣ: hello,world";
+		return "电子邮件信息: hello,world";
 	}
 }
 
-//����΢��
+//增加微信
 class WeiXin implements IReceiver {
 	public String getInfo() {
-		return "΢����Ϣ: hello,ok";
+		return "微信信息: hello,ok";
 	}
 }
 
-//��ʽ2
+//方式2
 class Person {
-	//���������ǶԽӿڵ�����
+	//这里我们是对接口的依赖
 	public void receive(IReceiver receiver ) {
 		System.out.println(receiver.getInfo());
 	}

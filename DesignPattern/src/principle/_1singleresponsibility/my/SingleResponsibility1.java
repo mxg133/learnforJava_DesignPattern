@@ -1,4 +1,4 @@
-package principle.singleresponsibility.my;
+package principle._1singleresponsibility.my;
 
 /**
  * @author 孟享广
