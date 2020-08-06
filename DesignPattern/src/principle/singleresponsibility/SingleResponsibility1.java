@@ -1,4 +1,4 @@
-package singleresponsibility.principle;
+package principle.singleresponsibility;
 
 public class SingleResponsibility1 {
 
