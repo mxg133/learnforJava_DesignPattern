@@ -1,4 +1,4 @@
-package com.atguigu.uml.generalization;
+package _2uml._2generalization;
 
 public abstract class DaoSupport{
 	public void save(Object entity){

@@ -147,7 +147,7 @@
               </net.java.amateras._2uml.properties.BooleanPropertyDescriptor>
             </propertyDescriptors>
             <stereoType></stereoType>
-            <name>com.atguigu._2uml.implementation.PersonServiceBean</name>
+            <name>com.atguigu._2uml._3implementation.PersonServiceBean</name>
             <isAbstract>false</isAbstract>
           </source>
           <target class="net.java.amateras._2uml.classdiagram.model.InterfaceModel" reference="../../.."/>
@@ -216,7 +216,7 @@
         </org.eclipse.ui.views.properties.PropertyDescriptor>
       </propertyDescriptors>
       <stereoType></stereoType>
-      <name>com.atguigu._2uml.implementation.PersonService</name>
+      <name>com.atguigu._2uml._3implementation.PersonService</name>
     </net.java.amateras._2uml.classdiagram.model.InterfaceModel>
     <net.java.amateras._2uml.classdiagram.model.ClassModel reference="../net.java.amateras._2uml.classdiagram.model.InterfaceModel/targetConnections/net.java.amateras._2uml.classdiagram.model.RealizationModel/source"/>
   </children>
