@@ -1,4 +1,4 @@
-package principle.ocp;
+package principle._5ocp;
 
 public class Ocp {
 

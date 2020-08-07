@@ -1,4 +1,4 @@
-package principle.ocp.improve;
+package principle._5ocp.improve;
 
 public class Ocp {
 
