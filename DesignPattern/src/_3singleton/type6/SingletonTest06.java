@@ -1,29 +1,26 @@
-package com.atguigu.singleton.type6;
-
+package _3singleton.type6;
 
 public class SingletonTest06 {
 
 	public static void main(String[] args) {
-		System.out.println("Ë«ÖØ¼ì²é");
+		System.out.println("åŒé‡æ£€æŸ¥");
 		Singleton instance = Singleton.getInstance();
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance == instance2); // true
 		System.out.println("instance.hashCode=" + instance.hashCode());
 		System.out.println("instance2.hashCode=" + instance2.hashCode());
-		
 	}
-
 }
 
-// ÀÁººÊ½(Ïß³Ì°²È«£¬Í¬²½·½·¨)
+// æ‡’æ±‰å¼(çº¿ç¨‹å®‰å…¨ï¼ŒåŒæ­¥æ–¹æ³•)
 class Singleton {
 	private static volatile Singleton instance;
-	
+
 	private Singleton() {}
-	
-	//Ìá¹©Ò»¸ö¾²Ì¬µÄ¹«ÓĞ·½·¨£¬¼ÓÈëË«ÖØ¼ì²é´úÂë£¬½â¾öÏß³Ì°²È«ÎÊÌâ, Í¬Ê±½â¾öÀÁ¼ÓÔØÎÊÌâ
-	//Í¬Ê±±£Ö¤ÁËĞ§ÂÊ, ÍÆ¼öÊ¹ÓÃ
-	
+
+	//æä¾›ä¸€ä¸ªé™æ€çš„å…¬æœ‰æ–¹æ³•ï¼ŒåŠ å…¥åŒé‡æ£€æŸ¥ä»£ç ï¼Œè§£å†³çº¿ç¨‹å®‰å…¨é—®é¢˜, åŒæ—¶è§£å†³æ‡’åŠ è½½é—®é¢˜
+	//åŒæ—¶ä¿è¯äº†æ•ˆç‡, æ¨èä½¿ç”¨
+
 	public static synchronized Singleton getInstance() {
 		if(instance == null) {
 			synchronized (Singleton.class) {
@@ -31,7 +28,7 @@ class Singleton {
 					instance = new Singleton();
 				}
 			}
-			
+
 		}
 		return instance;
 	}

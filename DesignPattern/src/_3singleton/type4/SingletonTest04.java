@@ -1,10 +1,9 @@
-package com.atguigu.singleton.type4;
-
+package _3singleton.type4;
 
 public class SingletonTest04 {
 
 	public static void main(String[] args) {
-		System.out.println("ÀÁººÊ½2 £¬ Ïß³Ì°²È«~");
+		System.out.println("æ‡’æ±‰å¼2 ï¼Œ çº¿ç¨‹å®‰å…¨~");
 		Singleton instance = Singleton.getInstance();
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance == instance2); // true
@@ -14,14 +13,14 @@ public class SingletonTest04 {
 
 }
 
-// ÀÁººÊ½(Ïß³Ì°²È«£¬Í¬²½·½·¨)
+// æ‡’æ±‰å¼(çº¿ç¨‹å®‰å…¨ï¼ŒåŒæ­¥æ–¹æ³•)
 class Singleton {
 	private static Singleton instance;
-	
+
 	private Singleton() {}
-	
-	//Ìá¹©Ò»¸ö¾²Ì¬µÄ¹«ÓĞ·½·¨£¬¼ÓÈëÍ¬²½´¦ÀíµÄ´úÂë£¬½â¾öÏß³Ì°²È«ÎÊÌâ
-	//¼´ÀÁººÊ½
+
+	//æä¾›ä¸€ä¸ªé™æ€çš„å…¬æœ‰æ–¹æ³•ï¼ŒåŠ å…¥åŒæ­¥å¤„ç†çš„ä»£ç ï¼Œè§£å†³çº¿ç¨‹å®‰å…¨é—®é¢˜
+	//å³æ‡’æ±‰å¼
 	public static synchronized Singleton getInstance() {
 		if(instance == null) {
 			instance = new Singleton();

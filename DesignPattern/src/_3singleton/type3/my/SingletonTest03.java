@@ -1,25 +1,29 @@
-package _3singleton.type1.my;
+package _3singleton.type3.my;
 
 /**
  * @author 孟享广
- * @date 2020-08-08 9:53 上午
+ * @date 2020-08-08 10:56 上午
  * @description
  */
-public class SingletonTest01 {
+public class SingletonTest03 {
     public static void main(String[] args) {
         singleton instance = singleton.getInstance();
-        singleton singleton2 = singleton.getInstance();
-        System.out.println(instance.equals(singleton2));
 
     }
 }
 
 class singleton{
+    private static singleton instance;
+
     private singleton() {
     }
-    private final static singleton instance = new singleton();
 
     public static singleton getInstance(){
+        if (instance == null){
+            instance = new singleton();
+        }
         return instance;
     }
+
+
 }
