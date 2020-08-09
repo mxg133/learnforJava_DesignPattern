@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DesignPattern/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern/DesignPattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JDKSRC/JDKSRC.iml" filepath="$PROJECT_DIR$/JDKSRC/JDKSRC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_1DesignPattern/_1DesignPattern.iml" filepath="$PROJECT_DIR$/_1DesignPattern/_1DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_2JDKSRC/_2JDKSRC.iml" filepath="$PROJECT_DIR$/_2JDKSRC/_2JDKSRC.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnforJava_DesignPattern.iml" filepath="$PROJECT_DIR$/learnforJava_DesignPattern.iml" />
     </modules>
   </component>

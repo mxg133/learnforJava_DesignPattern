@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-public class Factory {
+public class _1Factory_Calendar {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
