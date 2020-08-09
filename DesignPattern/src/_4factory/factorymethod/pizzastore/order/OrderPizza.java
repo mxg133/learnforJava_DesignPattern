@@ -1,42 +1,39 @@
-package com.atguigu.factory.factorymethod.pizzastore.order;
+package _4factory.factorymethod.pizzastore.order;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import com.atguigu.factory.factorymethod.pizzastore.pizza.Pizza;
-
-
-
+import _4factory.factorymethod.pizzastore.pizza.Pizza;
 
 public abstract class OrderPizza {
 
-	//¶¨ÒåÒ»¸ö³éÏó·½·¨£¬createPizza , ÈÃ¸÷¸ö¹¤³§×ÓÀà×Ô¼ºÊµÏÖ
+	//å®šä¹‰ä¸€ä¸ªæŠ½è±¡æ–¹æ³•ï¼ŒcreatePizza , è®©å„ä¸ªå·¥å‚å­ç±»è‡ªå·±å®ç°
 	abstract Pizza createPizza(String orderType);
-	
-	// ¹¹ÔìÆ÷
+
+	// æ„é€ å™¨
 	public OrderPizza() {
 		Pizza pizza = null;
-		String orderType; // ¶©¹ºÅûÈøµÄÀàĞÍ
+		String orderType; // è®¢è´­æŠ«è¨çš„ç±»å‹
 		do {
 			orderType = getType();
-			pizza = createPizza(orderType); //³éÏó·½·¨£¬ÓÉ¹¤³§×ÓÀàÍê³É
-			//Êä³öpizza ÖÆ×÷¹ı³Ì
+			pizza = createPizza(orderType); //æŠ½è±¡æ–¹æ³•ï¼Œç”±å·¥å‚å­ç±»å®Œæˆ
+			//è¾“å‡ºpizza åˆ¶ä½œè¿‡ç¨‹
 			pizza.prepare();
 			pizza.bake();
 			pizza.cut();
 			pizza.box();
-			
+
 		} while (true);
 	}
 
-	
 
-	// Ğ´Ò»¸ö·½·¨£¬¿ÉÒÔ»ñÈ¡¿Í»§Ï£Íû¶©¹ºµÄÅûÈøÖÖÀà
+
+	// å†™ä¸€ä¸ªæ–¹æ³•ï¼Œå¯ä»¥è·å–å®¢æˆ·å¸Œæœ›è®¢è´­çš„æŠ«è¨ç§ç±»
 	private String getType() {
 		try {
 			BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
-			System.out.println("input pizza ÖÖÀà:");
+			System.out.println("input pizza ç§ç±»:");
 			String str = strin.readLine();
 			return str;
 		} catch (IOException e) {

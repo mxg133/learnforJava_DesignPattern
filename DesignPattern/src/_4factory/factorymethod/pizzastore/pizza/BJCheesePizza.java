@@ -1,12 +1,12 @@
-package com.atguigu.factory.factorymethod.pizzastore.pizza;
+package _4factory.factorymethod.pizzastore.pizza;
 
 public class BJCheesePizza extends Pizza {
 
 	@Override
 	public void prepare() {
 		// TODO Auto-generated method stub
-		setName("±±¾©µÄÄÌÀÒpizza");
-		System.out.println(" ±±¾©µÄÄÌÀÒpizza ×¼±¸Ô­²ÄÁÏ");
+		setName("åŒ—äº¬çš„å¥¶é…ªpizza");
+		System.out.println(" åŒ—äº¬çš„å¥¶é…ªpizza å‡†å¤‡åŸææ–™");
 	}
 
 }
