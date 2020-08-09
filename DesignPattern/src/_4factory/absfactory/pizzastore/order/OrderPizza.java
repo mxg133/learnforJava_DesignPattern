@@ -1,45 +1,45 @@
-package com.atguigu.factory.absfactory.pizzastore.order;
+package _4factory.absfactory.pizzastore.order;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import com.atguigu.factory.absfactory.pizzastore.pizza.Pizza;
+import _4factory.absfactory.pizzastore.pizza.Pizza;
 
 public class OrderPizza {
 
 	AbsFactory factory;
 
-	// ¹¹ÔìÆ÷
+	// æ„é€ å™¨
 	public OrderPizza(AbsFactory factory) {
 		setFactory(factory);
 	}
 
 	private void setFactory(AbsFactory factory) {
 		Pizza pizza = null;
-		String orderType = ""; // ÓÃ»§ÊäÈë
+		String orderType = ""; // ç”¨æˆ·è¾“å…¥
 		this.factory = factory;
 		do {
 			orderType = getType();
-			// factory ¿ÉÄÜÊÇ±±¾©µÄ¹¤³§×ÓÀà£¬Ò²¿ÉÄÜÊÇÂ×¶ØµÄ¹¤³§×ÓÀà
+			// factory å¯èƒ½æ˜¯åŒ—äº¬çš„å·¥å‚å­ç±»ï¼Œä¹Ÿå¯èƒ½æ˜¯ä¼¦æ•¦çš„å·¥å‚å­ç±»
 			pizza = factory.createPizza(orderType);
-			if (pizza != null) { // ¶©¹ºok
+			if (pizza != null) { // è®¢è´­ok
 				pizza.prepare();
 				pizza.bake();
 				pizza.cut();
 				pizza.box();
 			} else {
-				System.out.println("¶©¹ºÊ§°Ü");
+				System.out.println("è®¢è´­å¤±è´¥");
 				break;
 			}
 		} while (true);
 	}
 
-	// Ğ´Ò»¸ö·½·¨£¬¿ÉÒÔ»ñÈ¡¿Í»§Ï£Íû¶©¹ºµÄÅûÈøÖÖÀà
+	// å†™ä¸€ä¸ªæ–¹æ³•ï¼Œå¯ä»¥è·å–å®¢æˆ·å¸Œæœ›è®¢è´­çš„æŠ«è¨ç§ç±»
 	private String getType() {
 		try {
 			BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
-			System.out.println("input pizza ÖÖÀà:");
+			System.out.println("input pizza ç§ç±»:");
 			String str = strin.readLine();
 			return str;
 		} catch (IOException e) {

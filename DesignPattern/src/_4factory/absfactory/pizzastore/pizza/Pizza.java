@@ -1,13 +1,13 @@
-package com.atguigu.factory.absfactory.pizzastore.pizza;
+package _4factory.absfactory.pizzastore.pizza;
 
-//½«Pizza Àà×ö³É³éÏó
+//å°†Pizza ç±»åšæˆæŠ½è±¡
 public abstract class Pizza {
-	protected String name; //Ãû×Ö
+	protected String name; //åå­—
 
-	//×¼±¸Ô­²ÄÁÏ, ²»Í¬µÄÅûÈø²»Ò»Ñù£¬Òò´Ë£¬ÎÒÃÇ×ö³É³éÏó·½·¨
+	//å‡†å¤‡åŸææ–™, ä¸åŒçš„æŠ«è¨ä¸ä¸€æ ·ï¼Œå› æ­¤ï¼Œæˆ‘ä»¬åšæˆæŠ½è±¡æ–¹æ³•
 	public abstract void prepare();
 
-	
+
 	public void bake() {
 		System.out.println(name + " baking;");
 	}
@@ -16,7 +16,7 @@ public abstract class Pizza {
 		System.out.println(name + " cutting;");
 	}
 
-	//´ò°ü
+	//æ‰“åŒ…
 	public void box() {
 		System.out.println(name + " boxing;");
 	}

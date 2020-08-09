@@ -1,15 +1,15 @@
-package com.atguigu.factory.absfactory.pizzastore.order;
+package _4factory.absfactory.pizzastore.order;
 
-import com.atguigu.factory.absfactory.pizzastore.pizza.BJCheesePizza;
-import com.atguigu.factory.absfactory.pizzastore.pizza.BJPepperPizza;
-import com.atguigu.factory.absfactory.pizzastore.pizza.Pizza;
+import _4factory.absfactory.pizzastore.pizza.BJCheesePizza;
+import _4factory.absfactory.pizzastore.pizza.BJPepperPizza;
+import _4factory.absfactory.pizzastore.pizza.Pizza;
 
-//这是工厂子类
+//杩欐槸宸ュ巶瀛愮被
 public class BJFactory implements AbsFactory {
 
 	@Override
 	public Pizza createPizza(String orderType) {
-		System.out.println("~使用的是抽象工厂模式~");
+		System.out.println("~浣跨敤鐨勬槸鎶借薄宸ュ巶妯″紡~");
 		// TODO Auto-generated method stub
 		Pizza pizza = null;
 		if(orderType.equals("cheese")) {

@@ -1,4 +1,4 @@
-package com.atguigu.factory.absfactory.pizzastore.order;
+package _4factory.absfactory.pizzastore.order;
 
 public class PizzaStore {
 

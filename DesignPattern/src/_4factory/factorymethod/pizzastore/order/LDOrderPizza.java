@@ -4,7 +4,6 @@ import _4factory.factorymethod.pizzastore.pizza.LDCheesePizza;
 import _4factory.factorymethod.pizzastore.pizza.LDPepperPizza;
 import _4factory.factorymethod.pizzastore.pizza.Pizza;
 
-
 public class LDOrderPizza extends OrderPizza {
 
 	
