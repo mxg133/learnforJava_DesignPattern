@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Composite {
+public class _4Composite_hashMap {
 
 	public static void main(String[] args) {
 

@@ -26,7 +26,7 @@ public class Client {
 		university.add(computerCollege);
 		university.add(infoEngineercollege);
 
-		//university.print();
+		university.print();
 		infoEngineercollege.print();
 	}
 
