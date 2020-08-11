@@ -1,9 +1,9 @@
 package _7adapter.interfaceadapter;
 
-//��AbsAdapter ���ǽ� Interface4 �ķ�������Ĭ��ʵ��
+//在AbsAdapter 我们将 Interface4 的方法进行默认实现
 public abstract class AbsAdapter implements Interface4 {
 
-	//Ĭ��ʵ��
+	//默认实现
 	public void m1() {
 
 	}
