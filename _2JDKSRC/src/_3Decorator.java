@@ -1,8 +1,7 @@
 import java.io.DataInputStream;
 import java.io.FileInputStream;
-import java.io.InputStream;
 
-public class Decorator {
+public class _3Decorator {
 
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
@@ -15,7 +14,7 @@ public class Decorator {
 		//5. FilterInputStream 类 有  protected volatile InputStream in; 即含被装饰者
 		//6. 分析得出在jdk 的io体系中，就是使用装饰者模式
 
-		DataInputStream dis = new DataInputStream(new FileInputStream("d:\\abc.txt"));
+		DataInputStream dis = new DataInputStream(new FileInputStream("1.txt"));
 		System.out.println(dis.read());
 		dis.close();
 	}
