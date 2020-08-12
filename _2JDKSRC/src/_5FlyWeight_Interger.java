@@ -1,4 +1,4 @@
-public class FlyWeight {
+public class _5FlyWeight_Interger {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,22 +16,15 @@ public class FlyWeight {
 		Integer z = Integer.valueOf(127);//..
 		Integer w = new Integer(127);
 
-
-
 		System.out.println(x.equals(y)); // 大小，true
 		System.out.println(x == y ); //  false
 		System.out.println(x == z ); // true
 		System.out.println(w == x ); // false
 		System.out.println(w == y ); // false
 
-
 		Integer x1 = Integer.valueOf(200);
 		Integer x2 = Integer.valueOf(200);
 		System.out.println("x1==x2" + (x1 == x2)); // false
-
-
-
-
 
 	}
 
