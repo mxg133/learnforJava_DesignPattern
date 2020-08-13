@@ -2,27 +2,27 @@ package _15command;
 
 public class LightOffCommand implements Command {
 
-	// �ۺ�LightReceiver
+	// 聚合LightReceiver
 
 	LightReceiver light;
 
-	// ������
+	// 构造器
 	public LightOffCommand(LightReceiver light) {
-			super();
-			this.light = light;
-		}
+		super();
+		this.light = light;
+	}
 
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		// ���ý����ߵķ���
+		// 调用接收者的方法
 		light.off();
 	}
 
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub
-		// ���ý����ߵķ���
+		// 调用接收者的方法
 		light.on();
 	}
 }

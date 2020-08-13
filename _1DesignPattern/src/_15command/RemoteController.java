@@ -2,14 +2,14 @@ package _15command;
 
 public class RemoteController {
 
-	// �� ��ť����������
+	// 开 按钮的命令数组
 	Command[] onCommands;
 	Command[] offCommands;
 
-	// ִ�г���������
+	// 执行撤销的命令
 	Command undoCommand;
 
-	// ����������ɶ԰�ť��ʼ��
+	// 构造器，完成对按钮初始化
 
 	public RemoteController() {
 
@@ -22,31 +22,31 @@ public class RemoteController {
 		}
 	}
 
-	// �����ǵİ�ť��������Ҫ������
+	// 给我们的按钮设置你需要的命令
 	public void setCommand(int no, Command onCommand, Command offCommand) {
 		onCommands[no] = onCommand;
 		offCommands[no] = offCommand;
 	}
 
-	// ���¿���ť
+	// 按下开按钮
 	public void onButtonWasPushed(int no) { // no 0
-		// �ҵ��㰴�µĿ��İ�ť�� �����ö�Ӧ����
+		// 找到你按下的开的按钮， 并调用对应方法
 		onCommands[no].execute();
-		// ��¼��εĲ��������ڳ���
+		// 记录这次的操作，用于撤销
 		undoCommand = onCommands[no];
 
 	}
 
-	// ���¿���ť
+	// 按下开按钮
 	public void offButtonWasPushed(int no) { // no 0
-		// �ҵ��㰴�µĹصİ�ť�� �����ö�Ӧ����
+		// 找到你按下的关的按钮， 并调用对应方法
 		offCommands[no].execute();
-		// ��¼��εĲ��������ڳ���
+		// 记录这次的操作，用于撤销
 		undoCommand = offCommands[no];
 
 	}
-	
-	// ���³�����ť
+
+	// 按下撤销按钮
 	public void undoButtonWasPushed() {
 		undoCommand.undo();
 	}

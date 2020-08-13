@@ -1,11 +1,10 @@
 package _15command;
 
-
-//��������ӿ�
+//创建命令接口
 public interface Command {
 
-	//ִ�ж���(����)
+	//执行动作(操作)
 	public void execute();
-	//��������(����)
+	//撤销动作(操作)
 	public void undo();
 }

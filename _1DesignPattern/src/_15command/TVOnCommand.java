@@ -2,11 +2,11 @@ package _15command;
 
 public class TVOnCommand implements Command {
 
-	// �ۺ�TVReceiver
+	// 聚合TVReceiver
 
 	TVReceiver tv;
 
-	// ������
+	// 构造器
 	public TVOnCommand(TVReceiver tv) {
 		super();
 		this.tv = tv;
@@ -15,14 +15,14 @@ public class TVOnCommand implements Command {
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		// ���ý����ߵķ���
+		// 调用接收者的方法
 		tv.on();
 	}
 
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub
-		// ���ý����ߵķ���
+		// 调用接收者的方法
 		tv.off();
 	}
 }
