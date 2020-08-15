@@ -1,10 +1,7 @@
 package _22state;
 
 /**
- * 抽奖活动 //
- *
- * @author Administrator
- *
+ * 抽奖活动
  */
 public class RaffleActivity {
 

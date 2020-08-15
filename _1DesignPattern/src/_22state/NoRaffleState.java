@@ -2,8 +2,6 @@ package _22state;
 
 /**
  * 不能抽奖状态
- * @author Administrator
- *
  */
 public class NoRaffleState extends State {
 

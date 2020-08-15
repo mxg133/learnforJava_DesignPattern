@@ -2,8 +2,6 @@ package _22state;
 
 /**
  * 发放奖品的状态
- * @author Administrator
- *
  */
 public class DispenseState extends State {
 

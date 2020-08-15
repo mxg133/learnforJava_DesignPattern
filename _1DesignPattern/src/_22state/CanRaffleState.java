@@ -4,8 +4,6 @@ import java.util.Random;
 
 /**
  * 可以抽奖的状态
- * @author Administrator
- *
  */
 public class CanRaffleState extends State {
 

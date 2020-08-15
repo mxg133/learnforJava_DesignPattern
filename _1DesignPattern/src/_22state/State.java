@@ -2,8 +2,6 @@ package _22state;
 
 /**
  * 状态抽象类
- * @author Administrator
- *
  */
 public abstract class State {
 

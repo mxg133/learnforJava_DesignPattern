@@ -2,8 +2,6 @@ package _22state;
 
 /**
  * 状态模式测试类
- * @author Administrator
- *
  */
 public class ClientTest {
 
